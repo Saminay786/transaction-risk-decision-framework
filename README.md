@@ -13,7 +13,7 @@ and honest uncertainty given only a few dozen frauds in the test window.
 
 **Status: in progress.**
 
-During my Master's at **IIT Madras** I worked on a small-scale risk evaluation:
+This builds on a small-scale risk evaluation I did as a coursework project at **IIT Madras**:
 **Credit Default and Fraud Risk Prediction (American Express – IIT Madras, Nov–Dec 2022)**.
 
 - **Data preparation:** EDA, scaling, KNN imputation for missing values, SMOTE-Tomek to balance
