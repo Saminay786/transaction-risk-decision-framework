@@ -13,11 +13,26 @@ and honest uncertainty given only a few dozen frauds in the test window.
 
 **Status: in progress.**
 
-During my Master's at **IIT Madras** I worked on a small-scale risk evaluation: scoring risk and
-judging it at a single cut-off. This project builds on that work. It moves from *estimating* risk
-to *deciding* on it: calibrated probabilities feed an explicit cost model, which picks approve,
-review or decline for each transaction under a review-capacity limit, and the result is measured
-in business terms with uncertainty attached.
+During my Master's at **IIT Madras** I worked on a small-scale risk evaluation:
+**Credit Default and Fraud Risk Prediction (American Express – IIT Madras, Nov–Dec 2022)**.
+
+- **Data preparation:** EDA, scaling, KNN imputation for missing values, SMOTE-Tomek to balance
+  the classes, and one-hot encoding.
+- **Modelling:** stratified K-fold cross-validation with hyperparameter tuning across XGBoost,
+  LightGBM, AdaBoost, Random Forest, Logistic Regression, Naïve Bayes and KNN.
+- **Result:** XGBoost performed best, with ROC-AUC 70.81% and F1 62.54%.
+
+That work stopped at predicting risk and was judged on model metrics. This project is the next
+step: it moves from *predicting* risk to *deciding* on it.
+
+| | IIT Madras project (2022) | This project |
+|---|---|---|
+| Question answered | "How risky is this case?" | "What should we do about it, and what does it cost?" |
+| Class imbalance | Resampled (SMOTE-Tomek) | Kept as is, so probabilities stay true to real fraud rates |
+| Output | Class label / score | Calibrated probability → approve / review / decline |
+| Validation | Stratified K-fold | Time-ordered split, so the test period comes after training |
+| Success measure | ROC-AUC, F1 | € cost per 1,000 txns, fraud € caught, false positives, savings with bootstrap CIs |
+| Operational limits | — | Review capacity, review cost, customer friction |
 
 Planned next steps are listed under [Limitations](#limitations).
 
