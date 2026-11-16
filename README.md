@@ -9,6 +9,18 @@ and honest uncertainty given only a few dozen frauds in the test window.
 
 > One-page summary for a Trust & Risk leader: [`reports/decision_memo.md`](reports/decision_memo.md)
 
+## Background and status
+
+**Status: in progress.**
+
+During my Master's at **IIT Madras** I worked on a small-scale risk evaluation: scoring risk and
+judging it at a single cut-off. This project builds on that work. It moves from *estimating* risk
+to *deciding* on it: calibrated probabilities feed an explicit cost model, which picks approve,
+review or decline for each transaction under a review-capacity limit, and the result is measured
+in business terms with uncertainty attached.
+
+Planned next steps are listed under [Limitations](#limitations).
+
 ## Quick start
 
 ```bash
