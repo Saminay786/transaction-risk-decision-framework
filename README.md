@@ -190,7 +190,7 @@ The core idea, choosing actions by expected cost, is established. This project a
 
 - C. Elkan, *The Foundations of Cost-Sensitive Learning*, IJCAI 2001: cost-based decision thresholds.
 - A. Correa Bahnsen, A. Stojanovic, D. Aouada, B. Ottersten, *Cost Sensitive Credit Card Fraud Detection Using Bayes Minimum Risk*, ICMLA 2013, and the follow-up work on example-dependent cost-sensitive models: per-transaction, amount-dependent fraud costs.
-- C. K. Chow, *On Optimum Recognition Error and Reject Tradeoff*, IEEE Trans. Information Theory, 1970: the reject (here, "review") option.
+- C. K. Chow, *An Optimum Character Recognition System Using Decision Functions*, IRE Trans. Electronic Computers, 1957; and *On Optimum Recognition Error and Reject Tradeoff*, IEEE Trans. Information Theory, 1970: the reject (here, "review") option, formalised.
 - A. Dal Pozzolo, O. Caelen, R. A. Johnson, G. Bontempi, *Calibrating Probability with Undersampling for Unbalanced Classification*, IEEE SSCI 2015: resampling distorts probabilities.
 - A. Dal Pozzolo, G. Boracchi, O. Caelen, C. Alippi, G. Bontempi, *Credit Card Fraud Detection: A Realistic Modeling and a Novel Learning Strategy*, IEEE TNNLS 2018: limited investigator capacity.
 
