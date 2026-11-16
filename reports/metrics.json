@@ -1,0 +1,31 @@
+{
+  "config": {
+    "c_r": 5.0,
+    "rho": 0.9,
+    "phi": 15.0,
+    "m": 0.03,
+    "kappa": 10.0,
+    "delta": 1.0,
+    "K": 0.01,
+    "seed": 42
+  },
+  "eda": {
+    "rows": 284807,
+    "frauds": 492,
+    "fraud_rate_pct": 0.1727485630620034,
+    "hours_covered": 47.99777777777778
+  },
+  "model_variant": "unweighted",
+  "calibrator": "platt",
+  "val_b_brier": {
+    "isotonic": 0.0003251478852716414,
+    "platt": 0.00027743262917879347
+  },
+  "p2_thresholds": {
+    "t_r": 0.5623413251903491,
+    "t_d": 0.5623413251903491,
+    "val_b_cost": 242.69000000000003
+  },
+  "test_review_capacity": 569,
+  "runtime_s": 31.2
+}

@@ -1,0 +1,10 @@
+# Cost assumptions for the decision layer (all money in EUR).
+# These are business assumptions, not estimates from data. Change them here only.
+c_r: 5.0      # cost of one manual review (analyst time)
+rho: 0.90     # probability a review catches a transaction that really is fraud
+phi: 15.0     # extra cost per approved fraud on top of the amount (chargeback fee + ops)
+m: 0.03       # margin lost on a falsely declined legit txn, as a fraction of Amount
+kappa: 10.0   # fixed cost of a false decline (customer friction / churn risk)
+delta: 1.0    # friction cost of reviewing a legit txn (delay, customer contact)
+K: 0.01       # review capacity as a fraction of transactions in the scored batch
+seed: 42
