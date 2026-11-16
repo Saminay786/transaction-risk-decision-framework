@@ -219,3 +219,10 @@ tests/                 pytest unit tests
 run_all.py             one-command pipeline
 reports/               all outputs (CSV, JSON, figures, memo)
 ```
+
+## License
+
+Code: [MIT](LICENSE) © 2026 Saminay786.
+
+Data: not included in this repo. The ULB credit-card dataset is distributed on Kaggle under its own
+terms (Database Contents License, DbCL v1.0). Download it yourself with the command in Quick start.
