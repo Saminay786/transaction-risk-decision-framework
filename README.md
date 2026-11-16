@@ -184,6 +184,21 @@ without seeing test labels.
 
 Also in `reports/figures/`: the Amount distribution for fraud vs legit transactions.
 
+## Related work (what's not new here)
+
+The core idea, choosing actions by expected cost, is established. This project applies it.
+
+- C. Elkan, *The Foundations of Cost-Sensitive Learning*, IJCAI 2001: cost-based decision thresholds.
+- A. Correa Bahnsen, A. Stojanovic, D. Aouada, B. Ottersten, *Cost Sensitive Credit Card Fraud Detection Using Bayes Minimum Risk*, ICMLA 2013, and the follow-up work on example-dependent cost-sensitive models: per-transaction, amount-dependent fraud costs.
+- C. K. Chow, *On Optimum Recognition Error and Reject Tradeoff*, IEEE Trans. Information Theory, 1970: the reject (here, "review") option.
+- A. Dal Pozzolo, O. Caelen, R. A. Johnson, G. Bontempi, *Calibrating Probability with Undersampling for Unbalanced Classification*, IEEE SSCI 2015: resampling distorts probabilities.
+- A. Dal Pozzolo, G. Boracchi, O. Caelen, C. Alippi, G. Bontempi, *Credit Card Fraud Detection: A Realistic Modeling and a Novel Learning Strategy*, IEEE TNNLS 2018: limited investigator capacity.
+
+**What this project adds** is small and practical, not methodological:
+- One end-to-end pipeline that combines three actions, amount-dependent costs, a review-capacity limit and an out-of-time test.
+- Paired bootstrap intervals on the € savings.
+- An out-of-time comparison showing that label-tuned thresholds can underperform when fraud examples are few.
+
 ## Limitations
 
 - **Few frauds.** The test window has under 100 frauds, so cost CIs are wide and one large fraud
